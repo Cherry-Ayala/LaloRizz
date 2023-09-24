@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Investment Advisor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+   
+
+    <div class="container">
+        <h1>Lalito, tu asistente financiero</h1>
+        <form method="POST">
+            <label for="input_text">Enter investment amount, risk level (1-5), and years separated by commas:</label>
+            <input type="text" id="input_text" name="input_text" required>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="output">
+            <p>{{ output }}</p>
+        </div>
+    </div>
+    <p id="outside-text"> <strong>Tip del dia:</strong> Un buen cálculo de tu Cardona Score te ayudará a tener un buen rendimiento, bajo riesgo y cumplir tus objetivos financieros.</p>
+</body>
+</html>
